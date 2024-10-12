@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #8e141b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    width: 100px; /* Ajustar el logo para pantallas pequeñas */
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 90vw; /* Cambiar a una unidad relativa */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #8e141b;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+    margin: 5px 0 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    font-size: 16px; /* Aumentar el tamaño de fuente para móviles */
+}
+
+button {
+    padding: 15px; /* Hacer el botón más grande en dispositivos móviles */
+    background-color: #8e141b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px; /* Aumentar tamaño para móviles */
+}
+
+button:hover {
+    background-color: #a52329;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+footer{
+    background-color:white;
+    color: #a52329;;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    top: 1rem;
+    font-size: 15px;
+    padding: 1px 0;
+}
+
+.p{
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header img {
+        width: 80px; /* Ajustar el logo en pantallas más pequeñas */
+    }
+
+    button {
+        font-size: 16px; /* Reducir el tamaño del botón en pantallas más pequeñas */
+        padding: 10px;
+    }
+
+    input[type="number"], input[type="text"] {
+        font-size: 14px; /* Ajustar el tamaño de las entradas en pantallas pequeñas */
+    }
+}

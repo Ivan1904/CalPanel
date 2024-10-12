@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Altura de Panel</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <header>
+        <img src="logo-cepsa.svg" alt="Logo CEPSA">
+        <h1>Calculadora de Altura de Panel</h1>
+    </header>
+    <div class="container">
+        <form id="panelForm">
+            <div class="breakers">
+                <h3>Seleccione los breakers</h3>
+                <label for="breakerA1">A1 (3 pulgadas)</label>
+                <input type="number" id="breakerA1" placeholder="Coloque una cantidad" min="0"><br>
+                
+                <label for="breakerA2">A2 (4.125 pulgadas)</label>
+                <input type="number" id="breakerA2" placeholder="Coloque una cantidad" min="0"><br>
+                
+                <label for="breakerA3">A3 (5.5 pulgadas)</label>
+                <input type="number" id="breakerA3" placeholder="Coloque una cantidad" min="0"><br>
+            </div>
+ 
+            <div class="amperaje">
+                <h3>Amperaje</h3>
+                <label for="amperajeInput">Ingrese el amperaje:</label>
+                <input type="number" id="amperajeInput" min="0" placeholder="Ej: 200"><br>
+            </div>
+ 
+            <div class="mlo">
+                <label for="mloCheck">¿Incluir MLO (5.5 pulgadas)?</label>
+                <input type="checkbox" id="mloCheck">
+            </div>
+ 
+            <button type="button" onclick="calcularAltura()">Calcular Altura</button>
+        </form>
+ 
+        <div id="resultado" class="resultado"></div>
+
+        <footer>
+            <p>© 2024 Iván Santana. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function () {
+                    console.log('Service Worker registrado exitosamente.');
+                })
+                .catch(function (error) {
+                    console.log('Fallo en el registro del Service Worker:', error);
+                });
+        }
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
