@@ -15,8 +15,8 @@ header {
 }
 
 span{
-    color: blue;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(8, 221, 245);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
 h1{
