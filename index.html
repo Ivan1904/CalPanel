@@ -37,6 +37,18 @@
                 <label for="mloCheck">¿Incluir MLO (5.5 pulgadas)?</label>
                 <input type="checkbox" id="mloCheck">
             </div>
+
+            <label for="mcb">¿Incluir MCB?</label>
+            <input type="checkbox" id="mcb" onchange="toggleMCB()">
+     
+            <!-- Opciones para MCB cuando está seleccionado -->
+            <div id="mcbOptions" style="display: none;">
+                <label for="mcbSize">Seleccione el tamaño del MCB:</label>
+                <select id="mcbSize">
+                    <option value="3">3 pulgadas</option>
+                    <option value="5.5">5.5 pulgadas</option>
+                </select>
+            </div>
  
             <button type="button" onclick="calcularAltura()">Calcular Altura</button>
         </form>
