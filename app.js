@@ -19,12 +19,11 @@ function calcularAltura() {
         return;
     }
 
-    // Calcular la distancia de los breakers seleccionados con la regla de par/impar
-    const alturaBreakersA1 = Math.ceil(breakerA1 / 2) * 3;       // Cada 2 breakers A1 = 3 pulgadas
-    const alturaBreakersA2 = Math.ceil(breakerA2 / 2) * 4.125;   // Cada 2 breakers A2 = 4.125 pulgadas
-    const alturaBreakersA3 = Math.ceil(breakerA3 / 2) * 5.5;     // Cada 2 breakers A3 = 5.5 pulgadas
-
-    // const alturaTotalBreakers = alturaBreakersA1 + alturaBreakersA2 + alturaBreakersA3;
+    //Verificar el rango del amperaje
+    if(amperaje < 200 || amperaje > 2000){
+        alert("El amperaje ingresado esta fuera del rango permitido(200 - 2000)");
+        return;
+    }
 
     // Calcular la altura adicional según el amperaje
     let alturaAmperaje = 0;
